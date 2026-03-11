@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { VscMenu } from "react-icons/vsc";
+import { LuMenu } from "react-icons/lu";
 import { VscClose } from "react-icons/vsc";
 
 function Header() {
@@ -25,7 +25,7 @@ function Header() {
                                 className='size-7 hover:cursor-pointer'
                             />
                         ) : (
-                            <VscMenu
+                            <LuMenu
                                 onClick={toggleMenu}
                                 aria-expanded={navMenuAberto}
                                 className='size-7 hover:cursor-pointer'
