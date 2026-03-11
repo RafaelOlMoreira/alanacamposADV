@@ -14,19 +14,17 @@ function Header() {
         // Border Button / Hover Text: #c9a87c
 
         <>
-            <header className='fixed z-3000 w-full bg-white p-6 py-8 border-b border-black/15'>
+            <header className='fixed top-0 left-0 z-3000 w-full bg-white p-6 py-6 border-b border-black/15'>
                 <div className='flex items-center justify-between'>
                     <img src="#" />
-                    <button className='w-10'>
+                    <button onClick={toggleMenu}>
                         {navMenuAberto ? (
                             <VscClose
-                                onClick={toggleMenu}
                                 aria-expanded={navMenuAberto}
                                 className='size-7 hover:cursor-pointer'
                             />
                         ) : (
                             <LuMenu
-                                onClick={toggleMenu}
                                 aria-expanded={navMenuAberto}
                                 className='size-7 hover:cursor-pointer'
                             />
@@ -35,8 +33,8 @@ function Header() {
                 </div>
             </header >
 
-            <div className={`fixed z-2000 ${navMenuAberto ? "opacity-100 pointer-events-auto transform transition-all duration-1000" : "hidden pointer-events-none"}`}>
-                <div className="flex px-6 pb-3 h-auto w-screen mt-23 shadow-lg">
+            <div className={`fixed z-2000 bg-white ${navMenuAberto ? "opacity-100 pointer-events-auto transform transition-all duration-1000" : "hidden pointer-events-none"}`}>
+                <div className="flex px-6 h-auto w-screen mt-20 shadow-lg">
                     <ul className='text-[#1a3b5d] w-screen'>
                         {data.map((d) => (
                             <li className={d.classname}><a href={d.href} onClick={toggleMenu}>{d.span}</a></li>
