@@ -6,7 +6,7 @@ function Sobre() {
         // azul: #1a3b5d
         // dourado: #c9a87c
         <>
-            <section className='h-screen bg-white font-inter px-5 py-15'>
+            <section className='bg-white font-inter px-5 pt-15'>
                 <h1 className='font-cormorant text-4xl text-[#1a3b5d]'>Sobre a Dra. Alana Campos</h1>
                 <div className='text-gray-700 leading-[1.8] text-md space-y-8 my-8'>
                     <p>Com mais de 15 anos de experiência em advocacia, a Dra. Ana Carolina Silva construiu uma carreira sólida baseada em ética, competência e dedicação aos seus clientes. Formada pela Universidade de São Paulo, com especialização em Direito Civil e Empresarial, ela se destaca pela abordagem humanizada e estratégica na resolução de conflitos.</p>

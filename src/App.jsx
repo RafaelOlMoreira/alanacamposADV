@@ -1,15 +1,20 @@
 import React from 'react'
 
 import Header from './Layout/Header'
-import Home from './Pages/Inicio'
+
+import Inicio from './Pages/Inicio'
 import Sobre from './Pages/Sobre'
+import Especialidades from './Pages/Especialidades'
 
 function App() {
   return (
     <>
       <Header />
-      <Home />
+
+      <Inicio />
       <Sobre />
+      <Especialidades />
+
     </>
   )
 }
