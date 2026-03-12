@@ -7,6 +7,7 @@ import Sobre from './Pages/Sobre'
 import Especialidades from './Pages/Especialidades'
 import Depoimentos from './Pages/Depoimentos'
 import Contato from './Pages/Contato'
+import Footer from './Layout/Footer'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Depoimentos />
       <Contato />
 
+      <Footer />
     </>
   )
 }
