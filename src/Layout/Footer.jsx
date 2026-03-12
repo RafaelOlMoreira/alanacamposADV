@@ -16,7 +16,7 @@ function Footer() {
 
             <div className='lg:grid lg:grid-cols-3 lg:gap-20'>
                 <div className='space-y-5'>
-                    <img src="#" />
+                    <img src="/logoFundoAzul.png" className='h-15' />
                     <p className='text-gray-300 text-sm lg:text-lg leading-relaxed'>Advocacia com excelência, ética e dedicação. Soluções jurídicas personalizadas para proteger seus direitos e interesses.</p>
                 </div>
                 <div className='mt-5 text-white'>
