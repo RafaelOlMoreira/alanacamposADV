@@ -14,3 +14,23 @@
     --font-inter: Inter, "sans-serif";
     --font-cormorant: Cormorant, "sans-serif";
 }
+
+.embla__viewport {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+}
+
+.embla__prev:disabled,
+.embla__next:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
