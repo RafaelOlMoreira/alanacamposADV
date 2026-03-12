@@ -6,16 +6,16 @@ function Sobre() {
         // azul: #1a3b5d
         // dourado: #c9a87c
         <>
-            <section id='Sobre' className='scroll-m-15 bg-white font-inter px-5 lg:px-32 pt-15 lg:py-30 lg:grid lg:grid-cols-2 lg:space-x-28'>
+            <section id='Sobre' className='scroll-m-15 bg-white font-inter px-5 md:px-16 lg:px-32 pt-15 lg:py-30 lg:grid lg:grid-cols-2 lg:space-x-28'>
                 <div>
                     <h1 className='font-cormorant text-4xl lg:text-6xl text-[#1a3b5d]'>Sobre a Dra. Alana Campos</h1>
                     <div className='text-gray-700 lg:text-2xl leading-[1.8] text-md space-y-8 my-8'>
-                        <p>Com mais de 15 anos de experiência em advocacia, a Dra. Ana Carolina Silva construiu uma carreira sólida baseada em ética, competência e dedicação aos seus clientes. Formada pela Universidade de São Paulo, com especialização em Direito Civil e Empresarial, ela se destaca pela abordagem humanizada e estratégica na resolução de conflitos.</p>
-                        <p>Sua atuação é pautada pela busca constante de soluções eficientes e personalizadas, sempre priorizando os interesses e objetivos de cada cliente. A Dra. Ana Carolina acredita que o direito deve ser acessível e compreensível, transformando complexidade jurídica em clareza e segurança.</p>
+                        <p>Com mais de 15 anos de experiência em advocacia, a Dra. Alana Campos construiu uma carreira sólida baseada em ética, competência e dedicação aos seus clientes. Formada pela Universidade de São Paulo, com especialização em Direito Civil e Empresarial, ela se destaca pela abordagem humanizada e estratégica na resolução de conflitos.</p>
+                        <p>Sua atuação é pautada pela busca constante de soluções eficientes e personalizadas, sempre priorizando os interesses e objetivos de cada cliente. A Dra. Alana Campos acredita que o direito deve ser acessível e compreensível, transformando complexidade jurídica em clareza e segurança.</p>
                     </div>
 
                     <div className='flex flex-col lg:text-2xl'>
-                        <span className='font-cormorant text-xl lg:text-4xl text-[#1a3b5d] font-semibold'>Dra. Ana Carolina Silva</span>
+                        <span className='font-cormorant text-xl lg:text-4xl text-[#1a3b5d] font-semibold'>Dra. Alana Campos</span>
                         <span className='text-[#c9a87c]'>OAB/SP 123.456 | Especialista em Direito Civil e Empresarial</span>
                     </div>
                 </div>

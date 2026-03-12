@@ -32,25 +32,25 @@ function Depoimentos() {
         // azul: #1a3b5d
         // dourado: #c9a87c
         <>
-            <section id='Depoimentos' className='scroll-m-15 h-auto font-inter px-5 mt-6 pt-15 pb-10 text-center'>
-                <h1 className='font-cormorant text-3xl text-[#1a3b5d]'>O Que Dizem Nossos Clientes</h1>
-                <p className='text-gray-700 leading-[1.8] text-md my-4'>
+            <section id='Depoimentos' className='scroll-m-15 h-auto font-inter px-5 md:px-16 mt-6 pt-15 pb-10 text-center'>
+                <h1 className='font-cormorant text-3xl lg:text-5xl text-[#1a3b5d]'>O Que Dizem Nossos Clientes</h1>
+                <p className='text-gray-700 leading-[1.8] text-md lg:text-xl my-4'>
                     Depoimentos reais de clientes satifesitos com nossos serviços jurídicos
                 </p>
 
-                <div className="embla">
+                <div className="embla md:px-40 lg:px-80">
                     {/* viewport precisa esconder overflow */}
                     <div className="embla__viewport overflow-hidden px-4" ref={emblaRef}>
                         {/* container precisa ser flex para slides ficarem em linha */}
-                        <div className="embla__container flex py-5 space-x-8 rounded-lg">
+                        <div className="embla__container flex py-5 lg:py-10 space-x-8 rounded-lg">
                             {data.map((d, i) => (
                                 // cada slide precisa ter largura fixa / não encolher
                                 <div key={i} className="embla__sliderelative w-full flex-none text-start">
                                     <span className='absolute text-[#c9a87c]/25 text-[90px] -m-3 -my-9'>"</span>
-                                    <p className='italic pt-5'>
+                                    <p className='italic pt-5 lg:text-2xl text-gray-700'>
                                         {d.feedback}
                                     </p>
-                                    <div className='my-3 space-y-1.5'>
+                                    <div className='my-3 lg:my-5 space-y-1.5 lg:text-xl'>
                                         <p className='text-[#1a3b5d]'>
                                             {d.nome}
                                         </p>
@@ -63,16 +63,16 @@ function Depoimentos() {
                         </div>
                     </div>
 
-                    <div className='space-x-5 my-5'>
+                    <div className='space-x-5 lg:space-x-15 my-5'>
                         <button
-                            className="embla__prev border-2 border-[#c9a87c] p-5 rounded-full hover:bg-[#c9a87c] transition-all duration-300"
+                            className="embla__prev border-2 border-[#c9a87c] p-5 lg:p-6 rounded-full hover:cursor-pointer hover:bg-[#c9a87c] transition-all duration-300"
                             onClick={goToPrev}
                             disabled={prevDisabled}
                         >
 
                         </button>
                         <button
-                            className="embla__next border-2 border-[#c9a87c] p-5 rounded-full hover:bg-[#c9a87c] transition-all duration-300"
+                            className="embla__next border-2 border-[#c9a87c] p-5 lg:p-6 rounded-full hover:cursor-pointer hover:bg-[#c9a87c] transition-all duration-300"
                             onClick={goToNext}
                             disabled={nextDisabled}
                         >
@@ -95,7 +95,7 @@ const data = [
         profissao: `Arquiteta`,
     },
     {
-        feedback: `A Dra. Ana Carolina foi fundamental para resolver uma questão empresarial complexa. Sua expertise e dedicação fizeram toda a diferença. Recomendo sem hesitação!`,
+        feedback: `A Dra. Alana Campos foi fundamental para resolver uma questão empresarial complexa. Sua expertise e dedicação fizeram toda a diferença. Recomendo sem hesitação!`,
         nome: `Roberto Mendes`,
         profissao: `Empresário`,
     },
