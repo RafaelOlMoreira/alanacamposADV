@@ -14,10 +14,26 @@ function Header() {
         // Border Button / Hover Text: #c9a87c
 
         <>
-            <header className='fixed top-0 left-0 z-3000 w-full bg-white p-6 py-6 border-b border-black/15'>
-                <div className='flex items-center justify-between'>
+            <header className='fixed top-0 left-0 z-3000 w-full bg-white p-6 py-6 lg:py-4 border-b border-black/15'>
+                <div className='flex items-center justify-between lg:justify-normal lg:px-12'>
                     <img src="#" />
-                    <button onClick={toggleMenu}>
+
+                    <div className='hidden lg:flex w-full items-center justify-center'>
+                        <ul className='flex gap-10'>
+                            {dataDesk.map((dataDesk) => (
+                                <li>
+                                    <a href={dataDesk.aHref} className={dataDesk.aClass}>
+                                        {dataDesk.menuSpan}
+                                        <span className={dataDesk.spanClass}></span>
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <a href='#Contato' className='hidden lg:flex ml-auto uppercase font-semibold text-lg text-center border-2 border-[#c9a87c] rounded-lg py-3 px-9 hover:cursor-pointer hover:text-white hover:bg-[#c9a87c] transition-all duration-300'>Contato</a>
+
+                    <button onClick={toggleMenu} className='block lg:hidden'>
                         {navMenuAberto ? (
                             <VscClose
                                 aria-expanded={navMenuAberto}
@@ -74,4 +90,31 @@ const data = [
         classname: `uppercase font-semibold text-lg text-center border-2 border-[#c9a87c] rounded-lg py-2.5 my-3 w-full hover:cursor-pointer hover:text-white hover:bg-[#c9a87c] transition-all duration-300`,
         href: `#Contato`,
     }
+]
+
+const dataDesk = [
+    {
+        aHref: "#",
+        aClass: `group relative uppercase pb-2 font-semibold text-lg text-[#1a3b5d] hover:cursor-pointer transition-all duration-300`,
+        menuSpan: `Início`,
+        spanClass: `absolute bottom-0 left-0 pt-0.5 w-0 bg-[#c9a87c] group-hover:w-full transition-all duration-500`,
+    },
+    {
+        aHref: "#Sobre",
+        aClass: `group relative uppercase pb-2 font-semibold text-lg text-[#1a3b5d] hover:cursor-pointer transition-all duration-300`,
+        menuSpan: `Sobre`,
+        spanClass: `absolute bottom-0 left-0 pt-0.5 w-0 bg-[#c9a87c] group-hover:w-full transition-all duration-500`,
+    },
+    {
+        aHref: "#Especialidades",
+        aClass: `group relative uppercase pb-2 font-semibold text-lg text-[#1a3b5d] hover:cursor-pointer transition-all duration-300`,
+        menuSpan: `Especialidades`,
+        spanClass: `absolute bottom-0 left-0 pt-0.5 w-0 bg-[#c9a87c] group-hover:w-full transition-all duration-500`,
+    },
+    {
+        aHref: "#Depoimentos",
+        aClass: `group relative uppercase pb-2 font-semibold text-lg text-[#1a3b5d] hover:cursor-pointer transition-all duration-300`,
+        menuSpan: `Depoimentos`,
+        spanClass: `absolute bottom-0 left-0 pt-0.5 w-0 bg-[#c9a87c] group-hover:w-full transition-all duration-500`,
+    },
 ]
