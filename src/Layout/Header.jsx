@@ -14,9 +14,9 @@ function Header() {
         // Border Button / Hover Text: #c9a87c
 
         <>
-            <header className='fixed top-0 left-0 z-3000 w-full bg-white p-6 py-6 lg:py-4 border-b border-black/15'>
+            <header className='fixed top-0 left-0 z-3000 w-full bg-white p-6 py-3 lg:py-4 border-b border-black/15'>
                 <div className='flex items-center justify-between lg:justify-normal lg:px-12'>
-                    <img src="/logoFundoBranco.png" className='h-15' />
+                    <img src="/logoFundoBranco.png" className='h-12' />
 
                     <div className='hidden lg:flex w-full items-center justify-center'>
                         <ul className='flex gap-10'>
