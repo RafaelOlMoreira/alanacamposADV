@@ -31,7 +31,7 @@ function Header() {
                         </ul>
                     </div>
 
-                    <a href='#Contato' className='hidden lg:flex ml-auto uppercase font-semibold text-lg text-center border-2 border-[#c9a87c] rounded-lg py-3 px-9 hover:cursor-pointer hover:text-white hover:bg-[#c9a87c] transition-all duration-300'>Contato</a>
+                    <a href='#Contato' className='hidden lg:flex ml-auto uppercase font-semibold text-lg text-[#1a3b5d] text-center border-2 border-[#c9a87c] rounded-lg py-3 px-9 hover:cursor-pointer hover:text-white hover:bg-[#c9a87c] transition-all duration-300'>Contato</a>
 
                     <button onClick={toggleMenu} className='block lg:hidden'>
                         {navMenuAberto ? (
