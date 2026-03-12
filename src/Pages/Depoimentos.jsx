@@ -33,12 +33,20 @@ function Depoimentos() {
         // dourado: #c9a87c
         <>
             <section id='Depoimentos' className='scroll-m-15 h-auto font-inter px-5 md:px-16 mt-6 pt-15 pb-10 text-center'>
-                <h1 className='font-cormorant text-3xl lg:text-5xl text-[#1a3b5d]'>O Que Dizem Nossos Clientes</h1>
-                <p className='text-gray-700 leading-[1.8] text-md lg:text-xl my-4'>
-                    Depoimentos reais de clientes satifesitos com nossos serviços jurídicos
-                </p>
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <h1 className='font-cormorant text-3xl lg:text-5xl text-[#1a3b5d]'>O Que Dizem Nossos Clientes</h1>
+                    <p className='text-gray-700 leading-[1.8] text-md lg:text-xl my-4'>
+                        Depoimentos reais de clientes satifesitos com nossos serviços jurídicos
+                    </p>
+                </div>
 
-                <div className="embla md:px-40 lg:px-80">
+                <div className="embla md:px-40 lg:px-80"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
                     {/* viewport precisa esconder overflow */}
                     <div className="embla__viewport overflow-hidden px-4" ref={emblaRef}>
                         {/* container precisa ser flex para slides ficarem em linha */}

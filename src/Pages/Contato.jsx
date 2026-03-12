@@ -17,12 +17,20 @@ function Contato() {
         // dourado: #c9a87c
         <>
             <section id='Contato' className='scroll-m-15 h-auto bg-gray-50 font-inter px-8 md:px-40 lg:px-96 mt-6 pt-15 pb-10 text-center'>
-                <h1 className='font-cormorant text-3xl lg:text-5xl text-[#1a3b5d]'>Entre em Contato</h1>
-                <p className='text-gray-700 leading-[1.8] text-md lg:text-xl my-4 px-5'>
-                    Agende uma consulta e descubra como podemos ajudá-lo com suas questões jurídicas
-                </p>
+                <div
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
+                    <h1 className='font-cormorant text-3xl lg:text-5xl text-[#1a3b5d]'>Entre em Contato</h1>
+                    <p className='text-gray-700 leading-[1.8] text-md lg:text-xl my-4 px-5'>
+                        Agende uma consulta e descubra como podemos ajudá-lo com suas questões jurídicas
+                    </p>
+                </div>
 
-                <form action="#" className='space-y-5 lg:space-y-10 mt-5'>
+                <form action="#" className='space-y-5 lg:space-y-10 mt-5'
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                >
                     <input
                         type="text"
                         placeholder='Nome Completo'
