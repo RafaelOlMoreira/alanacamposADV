@@ -6,7 +6,7 @@ function Especialidades() {
         // azul: #1a3b5d
         // dourado: #c9a87c
         <>
-            <section className='h-auto bg-gray-50 font-inter px-5 mt-6 pt-15 pb-10 text-center'>
+            <section id='Especialidades' className='scroll-m-15 h-auto bg-gray-50 font-inter px-5 mt-6 pt-15 pb-10 text-center'>
                 <h1 className='font-cormorant text-3xl text-[#1a3b5d]'>Áreas de Atuação</h1>
                 <p className='text-gray-700 leading-[1.8] text-md my-4'>
                     Expertise jurídica abrangente para atender suas necessidades com excelência e dedicação

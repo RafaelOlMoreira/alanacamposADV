@@ -15,6 +15,10 @@
     --font-cormorant: Cormorant, "sans-serif";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .embla__viewport {
     overflow: hidden;
 }

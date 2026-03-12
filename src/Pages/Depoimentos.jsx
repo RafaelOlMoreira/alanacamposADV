@@ -32,7 +32,7 @@ function Depoimentos() {
         // azul: #1a3b5d
         // dourado: #c9a87c
         <>
-            <section className='h-auto font-inter px-5 mt-6 pt-15 pb-10 text-center'>
+            <section id='Depoimentos' className='scroll-m-15 h-auto font-inter px-5 mt-6 pt-15 pb-10 text-center'>
                 <h1 className='font-cormorant text-3xl text-[#1a3b5d]'>O Que Dizem Nossos Clientes</h1>
                 <p className='text-gray-700 leading-[1.8] text-md my-4'>
                     Depoimentos reais de clientes satifesitos com nossos serviços jurídicos

@@ -37,7 +37,7 @@ function Header() {
                 <div className="flex px-6 h-auto w-screen mt-20 shadow-lg">
                     <ul className='text-[#1a3b5d] w-screen'>
                         {data.map((d) => (
-                            <li className={d.classname}><a href={d.href} onClick={toggleMenu}>{d.span}</a></li>
+                            <a href={d.href} onClick={toggleMenu}><li className={d.classname}>{d.span}</li></a>
                         ))}
                     </ul>
                 </div>
@@ -52,7 +52,7 @@ const data = [
     {
         span: `Inicio`,
         classname: `uppercase font-semibold text-lg py-3 w-full border-b border-black/7 hover:cursor-pointer hover:text-[#c9a87c] transition-all duration-300`,
-        href: `#Inicio`,
+        href: `#`,
     },
     {
         span: `Sobre`,
