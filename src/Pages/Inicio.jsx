@@ -5,7 +5,7 @@ function Home() {
         // branco: #FFFFFF
         // azul: #1a3b5d
         // dourado: #c9a87c
-        <section className="min-h-screen bg-[url('/bgHome.jpg')] drop-shadow-2xl bg-cover bg-top bg-fixed flex items-center relative">
+        <section className="min-h-screen bg-[url('/bgHome.jpg')] drop-shadow-2xl bg-cover bg-top bg-scroll md:bg-fixed flex items-center relative">
             <div className='absolute inset-0 bg-black/40'></div>
             <div className="relative px-5 lg:px-32 md:w-1/2 lg:w-2/3 text-white space-y-5 font-inter">
                 <h1 className="text-4xl md:text-5xl lg:text-7xl font-cormorant text-white">
